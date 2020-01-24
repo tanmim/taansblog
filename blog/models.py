@@ -19,14 +19,19 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-
 class User(models.Model):
 
 	gender= models.CharField(max_length=10)
 	name = models.CharField(max_length=40)
 
 class Title(models.Model):
+
 		title = models.TextField()
+
+class meaow(models.Model):
+	figaro = models.CharField(max_length=33)
+
+
 		 
 	
 	
