@@ -21,15 +21,20 @@ class Post(models.Model):
 
 class User(models.Model):
 
+	#age = models.PositiveIntegerField()
 	gender= models.CharField(max_length=10)
-	name = models.CharField(max_length=40)
+	name = models.CharField(max_length=40, primary_key = True )
+
+	def __str__(self):
+		return self.gender
 
 class Title(models.Model):
+	title = models.TextField()
 
-		title = models.TextField()
 
-class meaow(models.Model):
-	figaro = models.CharField(max_length=33)
+
+
+
 
 
 		 
